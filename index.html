@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>شركة رواد العمران المتكاملة</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Cairo',sans-serif;
+      background: linear-gradient(135deg,#0f172a,#111827,#1e293b);
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+      color:#fff;
+    }
+
+    .card{
+      width:100%;
+      max-width:420px;
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(15px);
+      border:1px solid rgba(255,255,255,0.15);
+      border-radius:28px;
+      padding:32px 24px;
+      text-align:center;
+      box-shadow:0 20px 50px rgba(0,0,0,0.4);
+    }
+
+    .logo{
+      width:95px;
+      height:95px;
+      margin:0 auto 18px;
+      border-radius:50%;
+      background:linear-gradient(135deg,#f59e0b,#fbbf24);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:34px;
+      font-weight:700;
+      color:#111827;
+      box-shadow:0 10px 25px rgba(251,191,36,0.4);
+    }
+
+    h1{
+      font-size:28px;
+      margin-bottom:8px;
+      font-weight:700;
+      line-height:1.5;
+    }
+
+    .subtitle{
+      font-size:18px;
+      color:#d1d5db;
+      margin-bottom:28px;
+      font-weight:400;
+    }
+
+    .btn-group{
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      margin-bottom:24px;
+    }
+
+    .btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:15px;
+      border-radius:16px;
+      text-decoration:none;
+      color:white;
+      font-size:16px;
+      font-weight:600;
+      transition:0.3s ease;
+      border:1px solid rgba(255,255,255,0.1);
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .call{ background:#2563eb; }
+    .whatsapp{ background:#16a34a; }
+    .email{ background:#dc2626; }
+    .website{ background:#7c3aed; }
+    .save{ background:#f59e0b; color:#111827; }
+
+    .social-title{
+      margin:18px 0 14px;
+      font-size:17px;
+      color:#f3f4f6;
+      font-weight:600;
+    }
+
+    .socials{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+    }
+
+    .social-btn{
+      padding:14px;
+      border-radius:14px;
+      text-decoration:none;
+      color:white;
+      font-weight:600;
+      transition:0.3s;
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .social-btn:hover{
+      background:rgba(255,255,255,0.18);
+      transform:scale(1.03);
+    }
+
+    .footer{
+      margin-top:24px;
+      color:#cbd5e1;
+      font-size:13px;
+    }
+
+    @media(max-width:480px){
+      h1{
+        font-size:24px;
+      }
+
+      .subtitle{
+        font-size:16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <div class="logo">R</div>
+
+    <h1>شركة رواد العمران المتكاملة</h1>
+
+    <div class="subtitle">
+      المهندس جمال جميل الحبيشي
+    </div>
+
+    <div class="btn-group">
+
+      <a class="btn call" href="tel:0508284248">
+        📞 اتصال مباشر
+      </a>
+
+      <a class="btn whatsapp" href="https://wa.me/966508284248" target="_blank">
+        💬 واتساب
+      </a>
+
+      <a class="btn email" href="mailto:rowadalimran@gmail.com">
+        ✉️ بريد إلكتروني
+      </a>
+
+      <a class="btn website" href="https://rowadalimran.great-site.net" target="_blank">
+        🌐 الموقع الإلكتروني
+      </a>
+
+      <button class="btn save" onclick="downloadVCF()">
+        👤 حفظ جهة الاتصال
+      </button>
+
+    </div>
+
+    <div class="social-title">
+      تابعنا على منصات التواصل
+    </div>
+
+    <div class="socials">
+
+      <a class="social-btn" href="https://x.com/Rawadalimran" target="_blank">
+        X
+      </a>
+
+      <a class="social-btn" href="https://snapchat.com/t/V2Wo6fNO" target="_blank">
+        Snapchat
+      </a>
+
+      <a class="social-btn" href="https://www.instagram.com/rowadalimran" target="_blank">
+        Instagram
+      </a>
+
+      <a class="social-btn" href="https://www.tiktok.com/@rawadalimran" target="_blank">
+        TikTok
+      </a>
+
+    </div>
+
+    <div class="footer">
+      © شركة رواد العمران المتكاملة
+    </div>
+
+  </div>
+
+  <script>
+    function downloadVCF(){
+
+      const vcf =
+`BEGIN:VCARD
+VERSION:3.0
+FN:المهندس جمال جميل الحبيشي
+ORG:شركة رواد العمران المتكاملة
+TEL;TYPE=CELL:0508284248
+EMAIL:rowadalimran@gmail.com
+URL:https://rowadalimran.great-site.net
+NOTE:X: https://x.com/Rawadalimran
+NOTE:Instagram: https://www.instagram.com/rowadalimran
+NOTE:TikTok: http://www.tiktok.com/@rawadalimran
+END:VCARD`;
+
+      const blob = new Blob([vcf], { type: 'text/vcard' });
+
+      const link = document.createElement('a');
+
+      link.href = URL.createObjectURL(blob);
+
+      link.download = 'rawad-alimran-contact.vcf';
+
+      document.body.appendChild(link);
+
+      link.click();
+
+      document.body.removeChild(link);
+    }
+  </script>
+
+</body>
+</html>
